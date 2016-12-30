@@ -1,0 +1,140 @@
+package javatermproj_2016;
+
+import java.io.*;
+
+class miro {
+
+	public static int cols = 8;
+	public static int rows = 8;
+	public int MAX_STACK_SIZE = 100;
+	public static char[][] map =
+
+			{ { '1', '1', '1', '1', '1', '1', '1', '1', }, { 'e', '0', '1', '0', '0', '0', '1', '1', },
+					{ '1', '0', '0', '0', '1', '0', '0', '1', }, { '1', '0', '1', '0', '0', '1', '1', '1', },
+					{ '1', '0', '1', '1', '0', '1', '1', '1', }, { '1', '0', '1', '1', '0', '0', '1', '1', },
+					{ '1', '0', '0', '0', '1', '0', '0', 'x', }, { '1', '1', '1', '1', '1', '1', '1', '1', } };
+	private static kygLocation2D location;
+	
+	public static void FindStartLocation() {
+		
+		location = null;
+		for (int i = 0; i < rows; i++)
+			for (int j = 0; j < cols; j++)
+				if (map[i][j] == 'e') {
+					location.row = i;
+					location.col = j;
+					break;
+				}
+		System.out.print("확인");
+	}
+	public static void printMaze() {
+
+		System.out.print("=========\n");
+		System.out.print(" 전체 미로의 크기 = ");
+		System.out.printf(" %d %d\n", cols, rows);
+		System.out.print("=========\n");
+
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < cols; j++) {
+				switch (map[i][j]) {
+				case '1':
+					System.out.printf("1");
+					break;// 벽
+				case '2':
+					System.out.printf("2");
+					break;// 지나간길
+				case 'e':
+					System.out.printf("e");
+					break;// 입구
+				case 'x':
+					System.out.printf("x");
+					break;// 출구
+				case '0':
+					System.out.printf("0");
+					break;// 안지나간길
+				}
+			}
+			System.out.print("\n");
+
+		}
+	}
+
+	public class ArrayStack {
+		int top = -1; // 요소의 개수
+		int data[] = new int[MAX_STACK_SIZE]; // 요소의 배열
+
+		void Reset() {
+			top = -1;
+		}
+
+		Boolean isEmpty() {
+			return top == -1;
+		}
+
+		Boolean isFull() {
+			return top == MAX_STACK_SIZE - 1;
+		}
+
+		void push(int e) { // 맨위에 항목 삽입
+			if (isFull())
+				System.out.print("스택 포화 에러");
+			data[++top] = e;
+		}
+
+		int pop() { // 맨위의 요소를 삭제하고 반환
+			if (isEmpty())
+				System.out.print("스택 공백 에러");
+			return data[top--];
+		}
+
+		int peek() { // 삭제하지 않고 요소 반환
+			if (isEmpty())
+				System.out.print("스택 공백 에러");
+			return data[top];
+		}
+
+		public void display() { // 스택 내용을 화면에 출력
+			System.out.printf("[스택 항목의 수 = %2d] == > ", top + 1);
+			for (int i = 0; i <= top; i++)
+				System.out.printf("<%2d>", data[i]);
+			System.out.printf("\n");
+		}
+	}
+
+	public class kygLocation2D	{
+		int row;
+		int col;
+		public kygLocation2D(int r, int c){
+			this.row =r;
+			this.col =c;
+		}
+		  // 위치 p가 자신의 이웃인지 검사하는 함수
+		Boolean isNeighbor(kygLocation2D p)	{
+		  return ((rows == p.row && (cols == p.col - 1 || cols == p.col + 1))
+				  || (cols == p.col && (rows == p.row - 1 || rows == p.row + 1))); }
+		int getrows() {
+			return rows;
+		}
+		int getcols() {
+			return cols;
+		}
+
+	}
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		ArrayStack stack;
+		try {
+			System.out.print("\t\t2016년도 2학기 자바 텀프로젝트\n\n");
+			// kygLocation2D location = new kygLocation2D();
+			printMaze();
+			FindStartLocation();
+			
+		} catch (Exception e) {
+			System.out.print("발생 오류 ==>");
+			System.out.print(e.getMessage());
+		} finally {
+			System.out.print("\n프로그램을 종료합니다.");
+		}
+	}
+}

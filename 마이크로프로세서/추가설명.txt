@@ -1,0 +1,27 @@
+int getOffset(int s);
+문자열을 우측 정렬하기 위해 우측에서 얼마나 띄워서 표시해야 하는지를 계산하는 함수
+void initUserInput();
+사용자 입력 상태를 담은 변수들을 초기화하는 함수. 사용자 입력 상태에 따라 처리가 끝나면 이 함수를 이용해 입력 상태를 초기화 함.
+void stopUntilUserInput();
+사용자가 버튼을 누르기 전까지 while() 반복문으로 무한대기시켜주는 함수
+void setMenuMode();
+메뉴 화면으로 전환
+void setGameMode();
+게임 화면으로 전환
+void setResultMode();
+결과 화면으로 전환
+void setCreditMode();
+게임 제작자 정보 화면으로 전환
+
+Adafruit_GFX.cpp, Adafruit_GFX.h
+Adafruit에서 만든 그래픽 라이브러리 파일입니다. 화면에 글자를 쓰거나 도형, 이미지를 그리는데 필요한 함수들이 정의되어 있습니다. 특별히 손 댈 필요가 없는 파일입니다.
+Adafruit_SSD1306.cpp, Adafruit_SSD1306.h
+Adafruit에서 만든 그래픽 칩 제어용 라이브러리입니다. I2C 통신(혹은 SPI)을 이용해 그래픽 드라이버 칩셋(SSD1306)을 제어합니다. 마찬가지로 손 댈 필요가 없는 파일입니다.
+InputController.cpp, InputController.h
+조이스틱의 상하좌우 움직임과 두 개의 버튼 입력 여부를 감지합니다. 본인의 조이스틱 종류와 연결 방법에 따라 이 부분을 살짝 수정해줘야 정상작동이 가능합니다.
+Template.ino
+실제 게임을 진행하기위한 코드들이 모두 들어있는 메인 파일입니다. 아두이노의 기본 구조인 setup(), loop() 함수를 중심으로 동작합니다.
+bitmaps.cpp, bitmaps.h
+이미지(bitmap)를 코드형태로 담고 있는 파일입니다. 게임 화면을 그리기 위해 사용되는 이미지들은 모두 여기에 담아두고 메인 파일인 Template.ino 파일에서 호출해 사용합니다.
+glcdfont.c
+화면에 ASCII 문자를 표시할 때 사용할 폰트 이미지를 담고 있습니다. 손댈 필요 없는 파일입니다.

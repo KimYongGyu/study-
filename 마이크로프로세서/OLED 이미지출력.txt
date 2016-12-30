@@ -1,0 +1,42 @@
+const uint8_t YG_data[] U8G_PROGMEM = {*/비트맵으로 바꾼코드입력 /* };
+
+void draw(void) {
+  // graphic commands to redraw the complete screen should be placed here  
+  if(temp == 0){
+    u8g.drawBitmapP(20, 2, 12, 60, kocoafabMark_data);
+  }else if(temp == 1){
+     u8g.drawBitmapP(5, 15, 15, 47, nepes_data);   
+  }else if(temp == 2){
+    //u8g.setFont(u8g_font_unifont);
+    u8g.setFont(u8g_font_osb18);
+    u8g.setFontPosTop();
+    u8g.drawStr(5, 20, "2016_MICRO");
+  }
+}
+
+//u8g.drawBitmapP(시작x좌표, 시작y좌표, 이미지 가로 크기, 이미지 세로 크기, 이미지 파일)
+//이미지 가로 크기는 한줄안에 있는 0X00 의 갯수, 세로 크기는 0X00의 세로 갯수 입니다. 
+//글자 출력 setFont함수로 폰트지정
+//setFontPosTop폰트의 위치 지정
+//drawStr 폰트의 base라인 지정 출력할 문자 적기
+
+void loop(void) {
+  // picture loop
+  u8g.firstPage();  
+  do {
+      draw();
+
+  } while( u8g.nextPage() );
+  
+  temp++;
+  
+  if(temp == 3){
+    temp = 0;
+  }
+  
+  // rebuild the picture after some delay
+  delay(1000);
+}
+
+//temp값을 1씩 증가시켜 주어서 해당 temp값에 맞는 이미지를 1초마다 출력합니다. 
+//temp가 2까지 있으니(0, 1, 2) 2를 넘어가면 (3이상 부터) 다시 0으로 돌아오게 하였습니다.

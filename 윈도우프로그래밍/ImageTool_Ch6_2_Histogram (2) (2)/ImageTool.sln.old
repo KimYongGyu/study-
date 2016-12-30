@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImageTool", "ImageTool.vcproj", "{1300C2D8-F38F-4D17-A171-3AF03C45E564}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1300C2D8-F38F-4D17-A171-3AF03C45E564}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1300C2D8-F38F-4D17-A171-3AF03C45E564}.Debug|Win32.Build.0 = Debug|Win32
+		{1300C2D8-F38F-4D17-A171-3AF03C45E564}.Release|Win32.ActiveCfg = Release|Win32
+		{1300C2D8-F38F-4D17-A171-3AF03C45E564}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

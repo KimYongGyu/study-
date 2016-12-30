@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kygreadNum", "kyg\kyg.vcxproj", "{6EA8AF4D-6129-4D62-951B-96001A201100}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kygvertor", "vertor\vertor.vcxproj", "{C3D41F4B-4D75-467B-A623-EB34A2F8A718}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kyginsectitiem", "kyginsectitiem\kyginsectitiem.vcxproj", "{2C1A726F-F929-47A8-BC21-29031B781B7F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kygbugworld", "kygbugworld\kygbugworld.vcxproj", "{1530BB8B-4E0D-432A-8562-9205C82ED20B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EA8AF4D-6129-4D62-951B-96001A201100}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6EA8AF4D-6129-4D62-951B-96001A201100}.Debug|Win32.Build.0 = Debug|Win32
+		{6EA8AF4D-6129-4D62-951B-96001A201100}.Release|Win32.ActiveCfg = Release|Win32
+		{6EA8AF4D-6129-4D62-951B-96001A201100}.Release|Win32.Build.0 = Release|Win32
+		{C3D41F4B-4D75-467B-A623-EB34A2F8A718}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C3D41F4B-4D75-467B-A623-EB34A2F8A718}.Debug|Win32.Build.0 = Debug|Win32
+		{C3D41F4B-4D75-467B-A623-EB34A2F8A718}.Release|Win32.ActiveCfg = Release|Win32
+		{C3D41F4B-4D75-467B-A623-EB34A2F8A718}.Release|Win32.Build.0 = Release|Win32
+		{2C1A726F-F929-47A8-BC21-29031B781B7F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C1A726F-F929-47A8-BC21-29031B781B7F}.Debug|Win32.Build.0 = Debug|Win32
+		{2C1A726F-F929-47A8-BC21-29031B781B7F}.Release|Win32.ActiveCfg = Release|Win32
+		{2C1A726F-F929-47A8-BC21-29031B781B7F}.Release|Win32.Build.0 = Release|Win32
+		{1530BB8B-4E0D-432A-8562-9205C82ED20B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1530BB8B-4E0D-432A-8562-9205C82ED20B}.Debug|Win32.Build.0 = Debug|Win32
+		{1530BB8B-4E0D-432A-8562-9205C82ED20B}.Release|Win32.ActiveCfg = Release|Win32
+		{1530BB8B-4E0D-432A-8562-9205C82ED20B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

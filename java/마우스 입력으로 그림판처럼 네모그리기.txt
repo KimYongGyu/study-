@@ -1,0 +1,82 @@
+package ex;
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+class MyBoard extends JPanel{
+	private int x1, x2, y1, y2 ;
+	
+	public MyBoard(){
+		setSize(700,500);
+		setVisible(true);
+		addMouseListener(new MouseListener(){
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mouseExited(MouseEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+
+			@Override
+			public void mousePressed(MouseEvent e) {
+				// TODO Auto-generated method stub
+				x1 = e.getX(); //눌렀을때 x좌표 저장
+				y1 = e.getY(); //눌렀을때 y좌표 저장
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				// TODO Auto-generated method stub
+				x2 = e.getX();  //마우스 땟을때 x좌표 저장
+				y2 = e.getY();  //마우스 땟을때 y좌표 저장
+				repaint(); //paintComponent호출
+			}});
+		addMouseMotionListener(new MouseMotionListener(){
+
+			@Override
+			public void mouseDragged(MouseEvent e) {
+				// TODO Auto-generated method stub
+				x2 = e.getX();
+				y2 = e.getY();
+				repaint();
+			}
+
+			@Override  //안쓴다고 지우면 마우스모션리스너가 작동을 못함
+			public void mouseMoved(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				
+			}});
+	}	
+	@Override
+	protected void paintComponent(Graphics g){
+		super.paintComponent(g); //없으면 리페인트에서 지워지지않음
+		g.setColor(Color.BLACK);
+		g.drawRect(x1, y1, x2 - x1, y2 - y1); //x2-x1 절대값으로 넣어야함
+		//g.drawRect(x1, y1, x2, y2); //혼동금지!! 처음 x,y 좌표 너비 높이
+	}
+}
+public class ex2 extends JFrame{
+	public ex2(){
+		add(new MyBoard());
+		setSize(500,500);
+		setVisible(true);
+		setTitle("Drawing Board");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ex2 f = new ex2();
+	}
+
+}

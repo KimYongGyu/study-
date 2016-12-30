@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="kygBug" Collapsed="true">
+    <Position X="16.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAkKAAIAAAAAACAAAAAAAEAAAAAABgAAAABEI=</HashCode>
+      <FileName>kygBug.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kygBugs" Collapsed="true">
+    <Position X="15.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAACAAAAUAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>kygBugs.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kygBugWorld" Collapsed="true">
+    <Position X="14.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCEAAAAJAAAEAAAgAAAYQAAAAAAAEAgAAAAAAAAAA=</HashCode>
+      <FileName>kygBugWorld.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kygDrunkenBug" Collapsed="true">
+    <Position X="14" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAACAAAAAAQAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>kygDrunkenBug.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kygLadyBug" Collapsed="true">
+    <Position X="17.5" Y="2.5" Width="1.5" />
+    <InheritanceLine Type="kygBug" FixedFromPoint="true">
+      <Path>
+        <Point X="17.25" Y="1.312" />
+        <Point X="17.25" Y="2.125" />
+        <Point X="18.25" Y="2.125" />
+        <Point X="18.25" Y="2.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAACAAACAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>kygLadyBug.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kygManBug" Collapsed="true">
+    <Position X="21" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAIAAAIAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>kygManBug.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kygMatrixI" Collapsed="true">
+    <Position X="12" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAEAAAAAAAACARAQAAAAACAAAAAEAAAAAABAAA=</HashCode>
+      <FileName>kygMatrixI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kygsuperLadyBug" Collapsed="true">
+    <Position X="19.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAIAAAAAAAAACAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>kygsuperLadyBug.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

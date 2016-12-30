@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ImageTool">
+</Property><Property Name="솔루션 파일" Value="D:\Codes\Windows_Programming_2016_2\ImageTool_Ch5\ImageTool.sln">
+</Property><Property Name="사용자 옵션 파일" Value="D:\Codes\Windows_Programming_2016_2\ImageTool_Ch5\ImageTool.suo">
+</Property><Property Name="Date" Value="2016년 10월 4일 화요일">
+</Property><Property Name="Time" Value="오후 18:00">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ImageTool.sln" Description="파일을 D:\Codes\Windows_Programming_2016_2\ImageTool_Ch5\ImageTool.sln.old(으)로 백업했습니다.">
+</Event><Event ErrorLevel="0" Project="" Source="ImageTool.suo" Description="파일을 D:\Codes\Windows_Programming_2016_2\ImageTool_Ch5\ImageTool.suo.old(으)로 백업했습니다.">
+</Event><Event ErrorLevel="0" Project="ImageTool" Source="ImageTool.vcproj" Description="Converting project file 'D:\Codes\Windows_Programming_2016_2\ImageTool_Ch5\ImageTool.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ImageTool" Source="ImageTool.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="ImageTool" Source="ImageTool.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="ImageTool" Source="ImageTool.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="ImageTool" Source="ImageTool.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="ImageTool" Source="ImageTool.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="ImageTool" Source="ImageTool.vcproj" Description="Done converting to new project file 'D:\Codes\Windows_Programming_2016_2\ImageTool_Ch5\ImageTool.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ImageTool" Source="ImageTool.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ImageTool.sln" Description="솔루션을 변환했습니다.">
+</Event><Event ErrorLevel="3" Project="" Source="ImageTool.sln" Description="Converted">
+</Event></UpgradeLog>

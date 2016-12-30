@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;location2&apos; from expression &apos;location&apos;&#x0D;&#x0A;- Original project: &apos;javatermproj_2016&apos;&#x0D;&#x0A;- Variable name: &apos;location2&apos;&#x0D;&#x0A;- Destination method: &apos;javatermproj_2016.miro.FindStartLocation()&apos;&#x0D;&#x0A;- Variable expression: &apos;location&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;location2&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;javatermproj_2016{miro.java" name="location2" replace="true" selection="769 8" stamp="1479306897354" version="1.0"/>
+</session>
